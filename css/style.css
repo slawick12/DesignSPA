@@ -1,0 +1,129 @@
+html,
+body,
+header,
+.view {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Museo Sans Cyrillic", -apple-system, BlinkMacSystemFont, Roboto, "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 1.35;
+
+}
+
+.img-section {
+    border-radius: 54px;
+    padding: 50px 150px;
+    text-align: center;
+    font-size: 34px;
+
+
+}
+
+.img-column {
+    padding-top: 20px;
+    text-align: center;
+    width: auto;
+}
+
+.img-column img {
+    height: 100px;
+    width: auto;
+    display: flex;
+    align-items: center;
+}
+
+.img-logo {
+    position: relative;
+    overflow: hidden;
+    padding: 20px 20px;
+    display:flex;
+    border-radius: 15px 50px;
+}
+
+.fa {
+    font-size: 1.5rem;
+}
+
+.fas {
+    margin-left: 3px;
+
+}
+
+.top-nav-collapse {
+    background-color: #5F5C5C !important;
+    box-shadow: 12;
+}
+
+.navbar:not(.top-nav-collapse) {
+    background: transparent !important;
+}
+
+
+
+@media (max-width: 740px) {
+
+
+    html,
+    body,
+    header,
+    .view {
+        height: 1000px;
+    }
+
+    .img-column img {
+        height: 50px;
+    }
+    .img-logo img{
+        height: 50%;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 850px) {
+
+    html,
+    body,
+    header,
+    .view {
+        height: 600px;
+    }
+}
+
+@media (max-width: 991px) {
+    .navbar:not(.top-nav-collapse) {
+        background: #424f95 !important;
+    }
+
+    .img-column img {
+        height: 80px;
+    }
+
+    .img-section {
+        padding: 40px 120px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 2300px) {
+    .w-100 {
+        display: none;
+    }
+
+    .navbar #navbarContent {
+        align-items: right;
+        position: absolute;
+        right: 150px;
+    }
+
+}
+
+.rgba-gradient {
+    background: -moz-linear-gradient(45deg, rgba(42, 27, 161, 0.7), rgba(29, 210, 177, 0.7) 100%);
+    background: -webkit-linear-gradient(45deg, rgba(42, 27, 161, 0.7), rgba(29, 210, 177, 0.7) 100%);
+    background: -webkit-gradient(linear, 45deg, from(rgba(42, 27, 161, 0.7)), to(rgba(29, 210, 177, 0.7)));
+    background: -o-linear-gradient(45deg, rgba(42, 27, 161, 0.7), rgba(29, 210, 177, 0.7) 100%);
+    background: linear-gradient(to 45deg, rgba(42, 27, 161, 0.7), rgba(29, 210, 177, 0.7) 100%);
+}
